@@ -8,7 +8,7 @@ struct VecOpIndex(T) {
 	T[] arr;
 	size_t len;
 
-	void insert(T t) {
+	void append(T t) {
 		if(this.len == arr.length) {
 			this.arr.length = this.arr.length == 0
 					? 10
@@ -20,11 +20,15 @@ struct VecOpIndex(T) {
 	ref T opIndex(size_t idx) return scope {
 		return this.arr[idx];
 	}
+
+	ref T opIndexFast(size_t idx) @trusted {
+		return *(arr.ptr + idx);
+	}
 }
 
 @safe unittest {
 	VecOpIndex!(int) i;
-	i.insert(1);
+	i.append(1);
 	assert(i[0] == 1);
 }
 
@@ -32,7 +36,15 @@ struct VecOpIndex(T) {
 	int* a;
 	{
 		VecOpIndex!(int) i;
-		i.insert(1);
+		i.append(1);
 		a = &i[0];
 	}
+}
+
+unittest {
+	VecOpIndex!(int) i;
+	i.append(1);
+	i.append(2);
+	int two = i.opIndexFast(1);
+	assert(two == 2);
 }
