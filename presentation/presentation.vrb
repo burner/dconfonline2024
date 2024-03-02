@@ -1,0 +1,8 @@
+\frametitle{Magic}
+\begin{columns}[T]
+^^I^^I\begin{column}{0.52\textwidth}
+^^I^^I\lstinputlisting[language=D,firstnumber=1,firstline=3,lastline=11,basicstyle=\scriptsize\ttfamily]{../source/magic.d}
+^^I^^I\end{column}
+^^I^^I\begin{column}{0.48\textwidth}
+^^I^^I\end{column}
+^^I^^I\end{columns}

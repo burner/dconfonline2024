@@ -16,7 +16,7 @@ unittest {
 	Vector1!(int, Allocator) vec;
 
 	{
-    	Allocator tuMalloc;
+		Allocator tuMalloc;
 		vec = Vector1!(int, Allocator)(&tuMalloc);
 	}
 }
@@ -24,15 +24,15 @@ unittest {
 struct Vector2(T,A) {
 	A* allocator;
 
-    @disable this(this);
-    @disable ref typeof(this) opAssign()(auto ref typeof(this) rhs);
+	@disable this(this);
+	@disable ref typeof(this) opAssign()(auto ref typeof(this) rhs);
 }
 
 unittest {
 	Vector2!(int, Allocator) vec;
 
 	{
-    	Allocator tuMalloc;
+		Allocator tuMalloc;
 		auto vec2 = Vector2!(int, Allocator)(&tuMalloc);
 
 		// The next line doesn't compile
@@ -47,7 +47,7 @@ unittest {
 *
 */
 
-struct VectorDetor(T) {
+struct VectorDestor(T) {
 	T[] arr;
 	size_t length;
 
@@ -61,5 +61,5 @@ struct VectorDetor(T) {
 }
 
 unittest {
-	VectorDetor!(int) v;
+	VectorDestor!(int) v;
 }

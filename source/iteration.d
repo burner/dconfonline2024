@@ -23,12 +23,17 @@ struct Vec(T) {
 		return *(arr.ptr + idx);
 	}
 
-	ViaPtr!(T) slicePtr(size_t begin, size_t end) @trusted {
-		return ViaPtr!(T)(this.arr.ptr + begin, this.arr.ptr + end);
+	ViaPtr!(T) slicePtr(size_t b
+			, size_t e) @trusted 
+	{
+		return ViaPtr!(T)(this.arr.ptr + b
+				, this.arr.ptr + e);
 	}
 
-	ViaIdx!(T) sliceIdx(size_t begin, size_t end) @trusted {
-		return ViaIdx!(T)(&this, begin, end);
+	ViaIdx!(T) sliceIdx(size_t b
+			, size_t e) @trusted 
+	{
+		return ViaIdx!(T)(&this, b, e);
 	}
 }
 
@@ -58,7 +63,7 @@ unittest {
 	int i;
 	foreach(it; v.slicePtr(0, 10)) {
 		int f = it;
-		assert(f == i, format("%s %s", f, i));
+		assert(f == i);
 		++i;
 	}
 	assert(i == 10);
@@ -91,7 +96,7 @@ unittest {
 	int i;
 	foreach(it; v.sliceIdx(0, 10)) {
 		int f = it;
-		assert(f == i, format("%s %s", f, i));
+		assert(f == i);
 		++i;
 	}
 	assert(i == 10);

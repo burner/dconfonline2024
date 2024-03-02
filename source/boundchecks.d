@@ -12,7 +12,7 @@ struct Vec(T) {
 
 	ref T opIndex(size_t idx) @trusted {
 		if(idx >= this.arr.length) {
-			throw new Exception("Out of bound");
+			throw new Exception("OOB");
 		}
 		return *(arr.ptr + idx);
 	}
@@ -24,7 +24,9 @@ struct Vec(T) {
 		return nullable(&arr[idx]);
 	}
 
-	bool opIndexNN(size_t idx, out Nullable!(T*) o) {
+	bool opIndexNN(size_t idx
+			, out Nullable!(T*) o) 
+	{
 		if(idx >= this.arr.length) {
 			o = Nullable!(T*).init;
 			return false;

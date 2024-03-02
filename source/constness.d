@@ -11,7 +11,7 @@ struct Vec(T) {
 		this.arr ~= t;
 	}
 
-	inout(size_t) length() const inout @property {
+	size_t length() const @property {
 		return this.arr.length;
 	}
 
@@ -60,6 +60,11 @@ unittest {
 
 	assert(vec[0][0] == 1);
 	vec[0].append(4);
+}
+
+unittest {
+	const Vec!int vec;
+	// vec.append(1); compiler-error
 }
 
 struct ViaPtr(T) {

@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{This feels wrong}{13}{0}{1}
+\beamer@sectionintoc {2}{Perfect is the enemy of good}{19}{0}{2}
