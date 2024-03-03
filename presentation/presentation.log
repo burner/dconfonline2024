@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.13)  2 MAR 2024 18:25
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.4.13)  3 MAR 2024 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1318,8 +1318,9 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 
 )) (/usr/share/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
-)
-(/usr/share/texmf-dist/tex/latex/scalerel/scalerel.sty
+) (./listings-rust.sty
+Package: listings-rust 2018/01/23 Custom Package
+) (/usr/share/texmf-dist/tex/latex/scalerel/scalerel.sty
 Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
 ng of objects, relative to a reference object or in absolute terms
 \thesrwidth=\skip78
@@ -1684,38 +1685,38 @@ Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 177.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.82538pt
-(hyperref)                removed on input line 177.
+(hyperref)                removed on input line 178.
 
 \@quotelevel=\count551
 \@quotereset=\count552
 (./presentation.aux)
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 179.
-LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1751,7 +1752,7 @@ LaTeX Font Info:    ... okay on input line 179.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 179.
+Package hyperref Info: Link coloring OFF on input line 180.
 (./presentation.out) (./presentation.out)
 \@outlinefile=\write6
 \openout6 = `presentation.out'.
@@ -1792,7 +1793,7 @@ Dictionary: translator-theorem-dictionary, Language: ChineseUTF8 2022/07/14 v2.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 179.
+loading the todonotes package. on input line 180.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1808,8 +1809,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'presentation.bbl' found.
  (./presentation.bbl)
-Package biblatex Info: Reference section=0 on input line 179.
-Package biblatex Info: Reference segment=0 on input line 179.
+Package biblatex Info: Reference section=0 on input line 180.
+Package biblatex Info: Reference segment=0 on input line 180.
 (./presentation.nav)
 Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
 Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
@@ -1817,7 +1818,7 @@ Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
 Font mapping `tex-text.tec' for font `Nimbus Sans Bold' not found.
 Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
 
-Overfull \vbox (15.63992pt too high) detected at line 180
+Overfull \vbox (15.63992pt too high) detected at line 181
  []
 
 [1
@@ -1825,9 +1826,7 @@ Overfull \vbox (15.63992pt too high) detected at line 180
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb
-Font mapping `tex-text.tec' for font `Nimbus Sans Bold' not found.
-)
+ (./presentation.vrb)
 Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
 Font mapping `tex-text.tec' for font `Nimbus Sans Bold' not found.
 Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
@@ -1836,13 +1835,57 @@ Font mapping `tex-text.tec' for font `Nimbus Sans' not found.
 ] (./presentation.vrb) [3
 
 ]
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+90.
+
+(/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+90.
+
+(/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+190.
+
+(/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+190.
+
+(/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 190.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 190.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 190.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 190
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 190
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [4
+
+]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb)
-Overfull \vbox (45.00215pt too high) detected at line 219
+Overfull \vbox (45.00215pt too high) detected at line 221
  []
 
-[4
+[5
 
 ]
 \openout4 = `presentation.vrb'.
@@ -1865,36 +1908,27 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 (../source/boundchecks.d) (../source/boundchecks.d))
-Overfull \vbox (10.68129pt too high) detected at line 230
+Overfull \vbox (10.68129pt too high) detected at line 232
  []
 
-[5
+[6
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb (../source/helper.d)) [6
+ (./presentation.vrb (../source/helper.d)) [7
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb
-(../source/allocator.d)) [7
+(../source/allocator.d)) [8
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb (../source/allocator.d))
-Overfull \vbox (32.53117pt too high) detected at line 254
- []
-
-[8
-
-]
-\openout4 = `presentation.vrb'.
-
- (./presentation.vrb (../source/iteration.d) (../source/iteration.d))
-Overfull \vbox (32.53117pt too high) detected at line 265
+Overfull \vbox (32.53117pt too high) detected at line 256
  []
 
 [9
@@ -1903,7 +1937,7 @@ Overfull \vbox (32.53117pt too high) detected at line 265
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb (../source/iteration.d) (../source/iteration.d))
-Overfull \vbox (10.68129pt too high) detected at line 276
+Overfull \vbox (32.53117pt too high) detected at line 267
  []
 
 [10
@@ -1912,85 +1946,103 @@ Overfull \vbox (10.68129pt too high) detected at line 276
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb (../source/iteration.d) (../source/iteration.d))
+Overfull \vbox (10.68129pt too high) detected at line 278
+ []
+
 [11
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb (../source/constness.d)) [12
-
-]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-99.
-
-(/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-99.
-
-(/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-299.
-
-(/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-299.
-
-(/usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 299.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 299.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 299.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 299
-.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 299
-.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [13
+ (./presentation.vrb (../source/iteration.d) (../source/iteration.d))
+[12
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb)
-[14
+ (./presentation.vrb (../source/constness.d)) [13
+
+] [14
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb) [15
 
-] (./presentation.vrb) [16
+]
+\openout4 = `presentation.vrb'.
 
-] (./presentation.vrb)
-[17
+ (./presentation.vrb) [16
+
+] (./presentation.vrb) [17
+
+] (./presentation.vrb) [18
 
 ]
 \openout4 = `presentation.vrb'.
 
- (./presentation.vrb) [18
+ (./presentation.vrb) [19
 
-] [19
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 340.
+ [20
+
+] [21
+
+]
+\openout4 = `presentation.vrb'.
+
+
+(./presentation.vrb (../source/magic.d)) [22
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb
+(../source/magic.d)) [23
 
 ]
 \openout4 = `presentation.vrb'.
 
  (./presentation.vrb (../source/magic.d))
-[20
+Overfull \vbox (10.89403pt too high) detected at line 359
+ []
+
+[24
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [25
+
+] [26
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [27
+
+]
+\openout4 = `presentation.vrb'.
+
+
+(./presentation.vrb) [28
+
+] [29
+
+]
+\openout4 = `presentation.vrb'.
+
+ (./presentation.vrb) [30
+
+] (./presentation.vrb)
+[31
+
+] [32
 
 ]
 \tf@nav=\write7
@@ -2004,18 +2056,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (./presentation.aux)
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 38D1A0441086C81DCB99D1594F5F4905;327.
+(rerunfilecheck)             Checksum: ECC40E3F8F24B63ACA73E30C10B5598B;678.
 Package logreq Info: Writing requests to 'presentation.run.xml'.
 \openout1 = `presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48003 strings out of 476683
- 1075358 string characters out of 5809790
- 2058983 words of memory out of 5000000
- 67235 multiletter control sequences out of 15000+600000
- 529996 words of font info for 99 fonts, out of 8000000 for 9000
+ 49187 strings out of 476683
+ 1090697 string characters out of 5809790
+ 2075941 words of memory out of 5000000
+ 68394 multiletter control sequences out of 15000+600000
+ 534013 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,13n,134p,1907b,1810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,13n,134p,7872b,2302s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on presentation.pdf (20 pages).
+Output written on presentation.pdf (32 pages).

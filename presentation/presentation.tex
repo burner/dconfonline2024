@@ -14,6 +14,7 @@
 \usepackage[absolute,overlay]{textpos}
 \usepackage[most]{tcolorbox}
 \usepackage{ctex}
+\usepackage{listings-rust}
 
 \definecolor{Title}{rgb}{0.94,0.52,0.08}
 \setbeamercolor{frametitle}{bg=Title,fg=black}
@@ -183,9 +184,10 @@
 		\begin{itemize}
 			\item Everybody wants good containers like C++'s std::vector in D. 	
 			\pause
-			\item But what is \textbf{good}?
 		\end{itemize}
 	\end{frame}
+
+	\section{What is \textbf{good}?}
 
 	%\section{Hopefully, there are still some people in the room with me at this point}
 
@@ -323,16 +325,72 @@
 		\end{itemize}
 	\end{frame}
 
+	\begin{frame}[fragile]{Allocators $\rightarrow$ \st{@safe}}
+		\begin{lstlisting}[language=Rust]
+unsafe impl GlobalAlloc for MyAllocator {
+    unsafe fn alloc(&self, layout: Layout) -> *mut u8 {
+        System.alloc(layout)
+    }
+
+    unsafe fn dealloc(&self, ptr: *mut u8, layout: Layout) {
+        System.dealloc(ptr, layout)
+    }
+}
+\end{lstlisting}
+	\end{frame}
+
 	\section{Perfect is the enemy of good}
 	\begin{frame}[fragile]{Magic}
 		\begin{columns}[T]
 		\begin{column}{0.52\textwidth}
-		\lstinputlisting[language=D,firstnumber=1,firstline=3,lastline=11,basicstyle=\scriptsize\ttfamily]{../source/magic.d}
+		\lstinputlisting[language=D,firstnumber=1,firstline=6,lastline=15,basicstyle=\scriptsize\ttfamily]{../source/magic.d}
 		\end{column}
 		\begin{column}{0.48\textwidth}
 		\end{column}
 		\end{columns}
 	\end{frame}
-	
 
+	\begin{frame}[fragile]{More Magic}
+		\lstinputlisting[language=D,firstnumber=1,firstline=32,lastline=40,basicstyle=\scriptsize\ttfamily]{../source/magic.d}
+	\end{frame}
+	
+	\begin{frame}[fragile]{More Magic}
+		\lstinputlisting[language=D,firstnumber=1,firstline=42,lastline=59,basicstyle=\scriptsize\ttfamily]{../source/magic.d}
+	\end{frame}
+
+	\begin{frame}[fragile]{Magic The Gathering}
+		\begin{lstlisting}[language=D]
+unittest {
+  void[string] i_am_a_set;
+}
+\end{lstlisting}
+	\end{frame}
+
+	\section{Rant}
+	\begin{frame}[fragile]{We can't have the cake and eat it too}
+		\begin{itemize}
+			\item \lstinline|@safe| $+$ allocator
+			\item barrier to entry
+			\item understandable api
+			\item good look and feel
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}[fragile]{More ranting}
+		\begin{centering}
+		\large
+		Why don't we have a de facto container library in code.dlang.org?
+		\end{centering}
+	\end{frame}
+	
+	\section{Conclusion}
+	\begin{frame}[fragile]{Conclusion}
+		\begin{itemize}
+			\item Almost always \lstinline@int[]@ or \lstinline@int[string]@\\[1cm]
+			\pause
+			\item Un-safe container that require an allocator
+		\end{itemize}
+	\end{frame}
+
+	\section{The End}
 \end{document}

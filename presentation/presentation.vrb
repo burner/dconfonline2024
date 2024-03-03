@@ -1,8 +1,6 @@
-\frametitle{Magic}
-\begin{columns}[T]
-^^I^^I\begin{column}{0.52\textwidth}
-^^I^^I\lstinputlisting[language=D,firstnumber=1,firstline=3,lastline=11,basicstyle=\scriptsize\ttfamily]{../source/magic.d}
-^^I^^I\end{column}
-^^I^^I\begin{column}{0.48\textwidth}
-^^I^^I\end{column}
-^^I^^I\end{columns}
+\frametitle{Conclusion}
+\begin{itemize}
+^^I^^I^^I\item Almost always \lstinline@int[]@ or \lstinline@int[string]@\\[1cm]
+^^I^^I^^I\pause
+^^I^^I^^I\item Un-safe container that require an allocator
+^^I^^I\end{itemize}

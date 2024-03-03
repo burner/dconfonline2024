@@ -26,12 +26,12 @@ struct Vec(T) {
 
 	bool opIndexNN(size_t idx
 			, out Nullable!(T*) o) 
-	{
+	@trusted {
 		if(idx >= this.arr.length) {
 			o = Nullable!(T*).init;
 			return false;
 		}
-		o = nullable(&arr[idx]);
+		o = nullable(this.arr.ptr + idx);
 		return true;
 	}
 

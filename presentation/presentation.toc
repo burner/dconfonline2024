@@ -1,2 +1,6 @@
-\beamer@sectionintoc {1}{This feels wrong}{13}{0}{1}
-\beamer@sectionintoc {2}{Perfect is the enemy of good}{19}{0}{2}
+\beamer@sectionintoc {1}{What is \textbf {good}?}{4}{0}{1}
+\beamer@sectionintoc {2}{This feels wrong}{14}{0}{2}
+\beamer@sectionintoc {3}{Perfect is the enemy of good}{21}{0}{3}
+\beamer@sectionintoc {4}{Rant}{26}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{29}{0}{5}
+\beamer@sectionintoc {6}{The End}{32}{0}{6}
